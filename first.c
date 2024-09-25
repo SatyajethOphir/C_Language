@@ -17,6 +17,11 @@ int reverse(int n ){
     rev =rev *10 +dig;
     n/=10;
   }
-
+  while (n!=0)
+  {
+    dig = n%10 ; 
+    rev =rev *10 +dig;
+    n/=10;
+  }
   return rev;
 }
